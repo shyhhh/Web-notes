@@ -53,6 +53,7 @@ step() // 打印1～10
 ```
 
 ## 2. String
+### String API
 `substring()` 方法返回一个字符串在开始索引到结束索引之间的一个子集, 或从开始索引直到字符串的末尾的一个子集。
 
 `str.substring(indexStart[, indexEnd])`
@@ -61,3 +62,4 @@ step() // 打印1～10
 
 ## 3. 使用 parcel 打开 
 `yarn global add parcel`  使用 VSCode/WebStorm 的打开服务，会有缓存问题 
+
