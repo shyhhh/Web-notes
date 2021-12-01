@@ -17,7 +17,7 @@
 9. form() 通过给定的对象中创建一个数组
 10. includes() 判断一个数组是否包含一个指定的值
 11. indexOf() 搜索数组中的元素，并返回它所在的位置
-12. isArray() 判断对象是否为数组
+12. isArr ay() 判断对象是否为数组
 13. join() 把数组的所有元素放入一个字符串
 14. keys() 返回数组的可迭代对象，包含原始数组的键（key）
 15. lastIndexOf() 搜索数组中的元素，并返回它最后出现的位置
@@ -33,3 +33,30 @@
 25. splice() 从数组中添加或删除元素
 26. toString() 把数组转换为字符串，并返回结果
 27. unshift() 向数组的开头添加一个或更多元素，并返回新的长度
+28. assign(a, b) 把b的值委派到a的上面，如果后面有，前面没有它会用后面的,后面的覆盖前面的,它的所有拷贝都是浅拷贝 
+    ```js
+    var a = {a1: 1, a2: 2}
+    var b = {b1: 1, b2: 2, b3: 3}
+
+    Object.assign(a, b) //  打印出a => {a1: 1,a2: 2,b1: 1,b2: 2,b3: 3}
+    
+    var a = {a:1, b:2}
+    var b = {a: '你'}
+    var c = {a: '说', c1: 1, c2: 2}
+
+    Object.assign(a, b) //  打印出a => {a: '你', b: 2}
+    Object.assign(a, b, c) // 先把 b 的弄的 a 的上面来，在把 c 的弄到 a 的上面来 打印出 a => {a: '说', b: 2, c1: 1, c2: 2}
+    ```
+    因为 assign 是浅拷贝所以它有一个问题,改新的值的时候很容易改了旧的值（bug） 
+    ```js
+      var a = {a1: 'a', a2: 2}
+      var b = {obj: {name: 'b'}} 
+
+      Object.assign(a, b)
+
+      a.obj.name = 'c'
+      console.log(b.obj.name) // c
+    ```
+      [MDN assign](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+      toString()、__proto__ 不可枚举的属性
+      不会跳过 值为 null 和 undefined 的源对象（依然会拷贝）
