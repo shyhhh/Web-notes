@@ -7,7 +7,7 @@
 
 ## 命令行
 
-- [常用命令行](<https://www.yuque.com/docs/share/59d2eac8-fd9d-4cd8-bdff-f7c3300d8f15>?# 《命令行》)
+- [常用命令行](<https://www.yuque.com/docs/share/59d2eac8-fd9d-4cd8-bdff-f7c3300d8f15>)
 
 ## git
 
@@ -16,11 +16,10 @@
 
 ## JavaScript
 
-- JS-API
-
-- JavaScript查缺补漏
-- 封装 DOM
-- 编程原则
+- [JS-API](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/JS-API.md)
+- [JavaScript查缺补漏](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/JavaScript%E6%9F%A5%E7%BC%BA%E8%A1%A5%E6%BC%8F.md)
+- [封装 DOM](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/%E5%B0%81%E8%A3%85DOM.md)
+- [编程原则](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/%E5%B0%81%E8%A3%85DOM.md)
 
 ## Leetcode
 
