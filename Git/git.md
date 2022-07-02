@@ -392,8 +392,13 @@ git push -u origin main
 ## 相关链接
 
 [语雀 git](https://www.yuque.com/g/promise-5hnnh/vyvig1/collaborator/join?token=NNsJcgtEisg40Xhy#)
+
 [阮一峰 git](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+
 [阮一峰 Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+
 [思维导图](https://www.processon.com/view/link/5c6e2755e4b03334b523ffc3)
+
 [现就职腾讯 天哥](https://juejin.cn/post/6869519303864123399)
+
 [政采云前端团队 工作中如何使用 git](https://juejin.cn/post/6974184935804534815)
