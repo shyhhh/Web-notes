@@ -21,7 +21,10 @@
 - [封装 DOM](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/%E5%B0%81%E8%A3%85DOM.md)
 - [编程原则](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/%E5%B0%81%E8%A3%85DOM.md)
 
-## Leetcode
+## Data Structure and Algorithm
+
+- 时间复杂度分析
+- 线性结构及其算法
 
 ## TypeScript
 
