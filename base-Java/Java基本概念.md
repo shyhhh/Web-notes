@@ -50,7 +50,8 @@ public class HellWord { . // 类后面的名字必须和文件名一样，注意
 java HelloWord.java
 ```
 IDEA 里面的 src 目录用来写我们的源码
-![执行过程](https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/5a034787f3c9768f3ebf976d38adf16713113b19.png)
+
+![执行过程](https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/5a034787f3c9768f3ebf976d38adf16713113b19.png){:height="50%" width="50%"}
 1. 运行命令：java Test
 2. java.exe 启动 JVM
 3. JVM 启动类加载器 ClassLoader
