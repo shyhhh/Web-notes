@@ -171,3 +171,10 @@ public class Identifier {
 - java 中变量的访问，遵守就近原则
 
 ## 数据类型基本概念
+### 数据类型的作用
+- 数据类型决定了变量在内存中开辟多大的空间
+- 不同的数据类型的变量，在内存中开辟不同大小的空间
+### 数据类型的分类
+数据类型分为：基本数据类型和引用数据类型
+![数据类型分类图](https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/456a2145f847ae9924330480e774551c27ebad17.png)
+![基本数据类型所占空间](https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/c3cf121d8ea747814187400be8c80a0c78abab88.png)
