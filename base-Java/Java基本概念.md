@@ -198,6 +198,17 @@ public class DataType {
     System.out.println(Integer.MAX_VALUE);
     System.out.println(Integer.MIN_VALUE);
     long n = 2147483648L;
+    float m = 3.14f;
+    float j = (float)3.14; // 强制转换成 f
   }
 }
 ```
+## 浮点型
+1. 浮点型数据有哪两种类型
+  - float    单精度  4byte
+  - double    双精度  8byte
+  - java 中基本数据类型的默认值均是向 0 去靠拢
+2. java 中出现的所有浮点型数据，默认的数据类型是 double, 如果想要使用 float 数据类型，需要在数字后面加上 f/F
+3. 高精度数据赋值给低精度的变量时，需要做强制类型转换
+4. 低精度数据赋值给高精度变量时，jvm 会自动完成类型的转换
+5. 整型数据转换规律同上
