@@ -148,7 +148,7 @@ public class Identifier {
       i = 100;
       System.out.printlm(i); // 打印出 100
       //多个变量同时声明
-      int a,b,c;
+      int a,b,c; // eg 变量记得初始化
     }
 }
 ```
@@ -178,3 +178,26 @@ public class Identifier {
 数据类型分为：基本数据类型和引用数据类型
 ![数据类型分类图](https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/456a2145f847ae9924330480e774551c27ebad17.png)
 ![基本数据类型所占空间](https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/c3cf121d8ea747814187400be8c80a0c78abab88.png)
+
+## 整型
+1. 整数的数据类型
+  - byte | Byte
+  - short | Short
+  - int | Integer
+  - long | Long
+2. 成员变量声明之后，jvm会对其进行默认的初始化
+3. 除了布尔数据类型，基本的数据类，对应了一个包装类，有成员属性 MAX_VALUE MIN_VALUE
+4. java 中出现的整数，默认的数据类型是 int， 要想**使用 long 数据类型，需要在数字后面加上 L/l**
+```java
+public class DataType {
+  static int a;
+  public static void main (String[] args){
+    int b = 10;
+    System.out.println(b);
+    // int 类型的最大值和最小值
+    System.out.println(Integer.MAX_VALUE);
+    System.out.println(Integer.MIN_VALUE);
+    long n = 2147483648L;
+  }
+}
+```
