@@ -212,3 +212,22 @@ public class DataType {
 3. 高精度数据赋值给低精度的变量时，需要做强制类型转换
 4. 低精度数据赋值给高精度变量时，jvm 会自动完成类型的转换
 5. 整型数据转换规律同上
+## 布尔类型
+1. 布尔类型的取值有哪些 ture false
+2. 在 java 中 布尔值的默认类型时 false
+3. boolean 数据类型的储存用了一个字节，1 表示 true, 0 表示 false
+4. 布尔类型经常和条件控制语句一起使用
+## 字符型
+1. 字符型数据类型，可以储存任意类型的字符
+2. 字符型数据需要用单引号引起来，字符串数据需要用双引号引起来
+3. java 中反斜杠 \ 转义字符
+4. System.out.print 和 System.out.println 有区别：
+  - System.out.print 仅仅是输出
+  - System.out.println 换行输出
+```java
+public class DataType {
+  public static void main (String[] args){
+    char c1 = 'a';
+  }
+}
+```
