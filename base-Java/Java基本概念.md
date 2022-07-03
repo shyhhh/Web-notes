@@ -44,8 +44,61 @@ public class HellWord { . // 类后面的名字必须和文件名一样，注意
     }
 }
 ```
+## Java 程序运行
 ```shell
 # 运行以下命令
 java HelloWord.java
 ```
 IDEA 里面的 src 目录用来写我们的源码
+![执行过程](https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/5a034787f3c9768f3ebf976d38adf16713113b19.png)
+1. 运行命令：java Test
+2. java.exe 启动 JVM
+3. JVM 启动类加载器 ClassLoader
+4. 类加载器在磁盘上搜索 Test class 文件
+5. JVM 把 Test class 文件 解释为二进制代码
+6. 操作系统执行二进制代码
+### 类加载器是如何寻找源文件的？
+1. 默认情况下是从当前目录寻找字节码文件
+2. 如果想在指定的路径下寻找，需要配置 java 的环境变量 classpath
+## Java 的注释和程序解释
+### 注释是什么？有什么用？
+注意：
+1. 注释出现在 java 的源代码中，用来解释程序
+2. 注释不会编译到 .class 字节码文件中，只有源代码才会被编译到字节码文件中
+
+### Java 注释有哪几种
+1. 单行注释 //
+2. 多行注释 /**/
+3. javadoc 注释:
+   专业的 java 注释，被 javadoc.exe 生成 java 的帮助文档
+```java
+/**
+* javadoc 注释
+*/
+```
+```java
+// public 表示公开的
+// class 表示这是一个类
+// HelloWord 是我们起的一个类名
+public class HelloWord // 定义了一个公开的类
+{
+    // 类体
+    // 类体中不可以直接写 java 语句，除了声明变量
+    /*
+      public 表示公开的
+      static 表示静态的
+      void 表示一个空的返回值
+      main 是 Java 中的 main 方法
+      String[] args 是 main 方法的一个形式参数
+      main 方法是 java 语法规则中规定的程序的入口，里面的所有不允许更改，除了 args 参数名
+    */
+    public static void main(String[] args) { // 定义了公开的静态的没有返回值的 main 方法
+        // 这里面的内容叫做 方法体
+        // 方法体中写的代码叫做 java 语句。java 语句必须以半角的分号结尾。
+        // 方法体内可以写多条 java 语句
+        // 下面这条语句的功能是：向控制台输出字符串
+        // 在 java 当中字符串必须用半角的双引号引起来
+        System.out.println("hello word");
+    }
+}
+```
