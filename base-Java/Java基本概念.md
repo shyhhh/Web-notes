@@ -146,7 +146,7 @@ public class Identifier {
       //  同时声明和初始化
       int i = 10;
       i = 100;
-      System.out.printlm(i); // 打印出 100
+      System.out.println(i); // 打印出 100
       //多个变量同时声明
       int a,b,c; // eg 变量记得初始化
     }
@@ -231,3 +231,125 @@ public class DataType {
   }
 }
 ```
+## 算数运算符
+```shell
++ - * / % ++ --
+```
+当自加运算符和赋值同时出现时，需要遵守的规则
+- 若自加运算符出现在变量的后面，先将变量的值赋值给左边变量，再对变量自身加 1
+- 若自加运算符出现在变量的前面，先完成变量自身加 1 的动作，再将结果赋值给左边的变量
+```java
+public class DataType {
+  public static void main (String[] args){
+    int c = 10;
+    int d = c++;
+    System.out.println(c); // 11
+    System.out.println(d); // 10
+  }
+}
+```
+## 关系运算符
+```shell
+  > < <= <= != ==
+```
+## 逻辑运算符
+```
+&  |  !
+^  逻辑异或 两边的算子只有不一样的时候，结果才为真
+&&  短路与
+||  短路或
+```
+## 赋值运算符
+```
+=
++= -= /= *= %=
+```
+## 循环语句
+### while 语句
+```
+while(布尔表达式) {
+  java 语句;
+  ...
+  java 语句;
+}
+```
+> while 语句可能一次也不执行
+### do while 语句
+```
+do { // 对于 do-while 语句 不管三七二十一，先去执行一遍 do 里面的内容，再去 判断 while 里面的内容
+java 语句;
+...
+java 语句;
+} while(布尔表达式);
+```
+> do-while 语句至少执行一次
+
+
+### break 语句
+- 使用场景：某些循环语句中，执行到一定程度后，不需要执行后面的循环
+- break 语句可以使用在循环语句中，用来终止当前循环，从而提高程序的执行效率
+- break 表示中断
+### continue 语句
+- 使用情景：某一次循环，满足某个条件后，不需要执行后面的语句
+- continue 语句使用在循环语句中，用来终止本次循环，从而提高程序的执行效率
+```java
+public class BreakTest {
+  public static void main (String[] args){
+    for(int i = 1; i <= 10; i++){
+      if(i == 5){
+        break;
+      }
+    System.out.println(i); // 1 2 3 4
+    }
+    for(int i = 1; i <= 10; i++){
+      if(i == 5){ // 终止本次循环
+        continue;
+      }
+    System.out.println(i); // 1 2 3 4 6 7 8 9 10
+    }
+  }
+}
+```
+## 数组
+ 数组是可以存储相同数据类型的数据的集合。数组本质上是一种变量。
+
+ 1. 数组的四要素
+ 数据类型、数组名称、数组元素、数组下标
+ 1. 数组的声明语法
+   数组类型[] 数组名称;  int[] array;
+   数据类型 数组名称[]; int array[];
+ 2. 数组的初始化语法
+    - 分配内存
+    数组名称 = new [数组大小]
+    - 赋值
+    数组名称[数组下标] = 数据
+  > 注意： 数组有固定的大小，一旦被创建，无法修改大小
+## 方法的引入（类似 JS 的函数）
+本质：一段具有特定功能的代码片段，可以被重复的使用
+> 注意：方法是定义在类体中，而不是方法体中,类中可以定义多个方法
+
+语法结构
+```
+[访问修饰符| public static]  返回值数据类型| int  方法名| sum  形式参数列表| (int a, int b) {
+  方法体
+}
+```
+- 访问修饰符可以没有，是一个可选项，系统默认给出
+
+```java
+public class MethodTest {
+  public static void main (String[] args){
+    int a = 10;
+    int b = 20;
+    int c = MethodTest.sum(a, b);
+    System.out.println(a + "+" + b + "=" + c);
+  }
+
+  public static int sum (int a, int b){
+    int c = m + n;
+    return c;
+  }
+
+}
+```
+> 一部分的基础知识就不作记笔记了，语言都具有共同性的
