@@ -22,10 +22,7 @@
 - [编程原则](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/%E5%B0%81%E8%A3%85DOM.md)
 
 ## Data Structure and Algorithm
-
-- 时间复杂度分析
-- 线性结构及其算法
-
+- [《JavaScript数据结构与算法》](https://www.yuque.com/docs/share/8d6fff0c-81df-44eb-a602-de42c6c04d5c?#)
 ## TypeScript
 
 - [ts入门教程](https://ts.yayujs.com/)
@@ -33,3 +30,9 @@
 ## Vue
 
 ## React
+## learn english
+- 推荐 **不背单词** app
+- [英语学习攻略](https://byoungd.gitbook.io/english-level-up-tips/part-i/1-understanding)
+- [音标、语法、语音技巧](https://www.youtube.com/c/yingyutu)
+- [每日英语听力](https://www.bilibili.com/video/BV1U7411a7xG?p=1&share_medium=iphone&share_plat=ios&share_session_id=B5865C76-0613-4335-8D0D-8348097850C8&share_source=WEIXIN&share_tag=s_i&timestamp=1651906441&unique_k=NqWIaWw)
+- [英语听力练习](https://b23.tv/75C55D2)
