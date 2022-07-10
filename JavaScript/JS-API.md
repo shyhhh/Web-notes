@@ -28,7 +28,7 @@
    ```
 5. filter() 过滤
 6. find() 返回符合传入测试（函数）条件的数组元素,从一堆对象里找出一堆对象, find()只找一个，filter可找多个
-   ```
+   ```js
    var a = [0, 1, 2] 
    a.find( (i) => i === 2 ) // 2
    var a = [{name:'a1',  {name: 'a2', value: 'xxx'}, {name: 'a3'}]
@@ -144,7 +144,7 @@
       a.entries()  // 会得到一个可迭代对象
     ```
     ![entries.png](https://i.loli.net/2021/12/02/XvYUAsk3dmEN7oF.png)
+   可迭代对象一项一项的遍历
+32. keys 和 values 一样是可以把数组变成一个可迭代对象
 
-
-
-注意: 在MDN中， 如果是 Array.xxx 就可以直接用，如果是 Array.prototype.xxx 既可以直接用也可以 数组.xxx ,前者存在数组函数中， 后者存在数组原型中   
+注意: MDN中如果是 Array.xxx 就可以直接用，如果是 Array.prototype.xxx 既可以直接用也可以 数组.xxx ,前者存在数组函数中， 后者存在数组原型中   
