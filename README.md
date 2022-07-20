@@ -16,6 +16,8 @@
 
 ## JavaScript
 
+- [手写API](https://github.com/shyhhh/Web-notes/tree/main/%E6%89%8B%E5%86%99JavaScript-API)
+- [LeetCode刷题](https://github.com/shyhhh/Web-notes/tree/main/%E6%89%8B%E5%86%99LeetCode)
 - [JS-API](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/JS-API.md)
 - [JavaScript查缺补漏](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/JavaScript%E6%9F%A5%E7%BC%BA%E8%A1%A5%E6%BC%8F.md)
 - [封装 DOM](https://github.com/shyhhh/Web-notes/blob/main/JavaScript/%E5%B0%81%E8%A3%85DOM.md)
