@@ -2,5 +2,5 @@
 .parcel-cache/
 .vscode/
 node_modules/
-.Ds_store/
+.Ds_Store/
 .idea/
