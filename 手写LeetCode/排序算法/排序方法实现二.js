@@ -2,7 +2,7 @@
 function randomArray(n) {
   var result = []
   for (var i = 0; i < n; i++) {
-    result.push(Math.random() * n | 0)
+    result.push(Math.random() * n | 0)  // n 以内的随机数， ｜ 0 的意思是取整
   }
   return result
 }
@@ -40,8 +40,7 @@ function bubbleSort(ary) {
   }
   return ary
 }
-
-
+  
 /**
  * 选择排序
  * 时间复杂度: n*n
