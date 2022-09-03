@@ -1,6 +1,7 @@
-var longestPalindrome = function(s) {
+var longestPalindrome = function (s) {
   if (s.length === 1) return s;
-  let maxRes = 0, maxStr = '';
+  let maxRes = 0,
+    maxStr = '';
   for (let i = 0; i < s.length; i++) {
     let str1 = palindrome(s, i, i);
     let str2 = palindrome(s, i, i + 1);
@@ -15,6 +16,7 @@ var longestPalindrome = function(s) {
   }
   return maxStr;
 };
+
 function palindrome(s, l, r) {
   while (l >= 0 && r < s.length && s[l] === s[r]) {
     l--;

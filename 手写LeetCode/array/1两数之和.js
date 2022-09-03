@@ -19,6 +19,7 @@ let twoSum1 = function(nums,target){
     }
 }
 
+
 //第二次改进，降低了复杂度
 let twoSum2 = function(nums, target) {
     let obj = {}
@@ -30,6 +31,6 @@ let twoSum2 = function(nums, target) {
         }
         obj[nums[i]] = i;
     }
-};
+}
 //如果对同一个数组需要进行两次遍历操作，
 // 那么可以通过创建一个obj,让数组的key和value对调放入obj，然后直接取

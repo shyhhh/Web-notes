@@ -7,14 +7,14 @@
  * 递归到最底部时，数列的大小是零或一，也就是已经排序好了。这个算法一定会结束，因为在每次的迭代（iteration）中，它至少会把一个元素摆到它最后的位置去。
  */
 
- function quickSort(arr) {
-  if(arr.length <= 1) {
+function quickSort(arr) {
+  if (arr.length <= 1) {
     return arr
   }
   let leftArr = []
   let rightArr = []
-  for(let i = 1; i < arr.length; i++) {
-    if(arr[i] >= arr[0]) {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] >= arr[0]) {
       rightArr.push(arr[i])
     } else {
       leftArr.push(arr[i])

@@ -13,6 +13,6 @@ function sectionSort(arr) {
         min = j
       }
     }
-    [ arr[i], arr[min]] = [arr[min], arr[i] ] // 把每轮的第一个和当前轮的最小值互换位置
+    [arr[i], arr[min]] = [arr[min], arr[i]] // 把每轮的第一个和当前轮的最小值互换位置
   }
 }
